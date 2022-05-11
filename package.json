@@ -1,0 +1,12 @@
+{
+  "name": "refactoring_fizzbuzz",
+  "scripts": {
+    "run": "node src/app.js",
+    "test": "jest",
+    "test-debug": "node --inspect-brk jest --runInBand"
+  },
+  "packageManager": "yarn@3.2.0",
+  "devDependencies": {
+    "jest": "^28.1.0"
+  }
+}
