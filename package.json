@@ -4,7 +4,8 @@
     "run": "node src/app.js",
     "test": "jest",
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
-    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+    "server": "node ./lib/server.js"
   },
   "packageManager": "yarn@3.2.0",
   "devDependencies": {
@@ -28,5 +29,8 @@
   "bugs": {
     "url": "https://github.com/jdbr99/launchx-fizzbuzzRefactoring/issues"
   },
-  "homepage": "https://github.com/jdbr99/launchx-fizzbuzzRefactoring#readme"
+  "homepage": "https://github.com/jdbr99/launchx-fizzbuzzRefactoring#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
 }
