@@ -8,7 +8,6 @@ describe("ExplorerService tests", () => {
         const java = ExplorerService.filterByMission(explorers, "java")
         expect(node.length).toBe(10)
         expect(java.length).toBe(5)
-        expect(2).toBe(99)
     })
 
     test("Correctly returns length of filtered explorers", () => {
