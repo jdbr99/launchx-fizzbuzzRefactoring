@@ -2,10 +2,13 @@
   "name": "refactoring_fizzbuzz",
   "scripts": {
     "run": "node src/app.js",
-    "test": "jest"
+    "test": "jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "packageManager": "yarn@3.2.0",
   "devDependencies": {
+    "eslint": "^8.15.0",
     "jest": "^28.1.0"
   },
   "description": "",
