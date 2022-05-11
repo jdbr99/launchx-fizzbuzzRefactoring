@@ -15,4 +15,15 @@ describe("ExplorerController tests", () => {
         const node = ExplorerController.getExplorersAmonutByMission("node");
         expect(node).toBe(10);
     });
+
+    test("Correctly gets tricks from number", () => {
+        const score = ExplorerController.validateNumber(1);
+        const fizz = ExplorerController.validateNumber(3);
+        const buzz = ExplorerController.validateNumber(5);
+        const fizzbuzz = ExplorerController.validateNumber(15);
+        expect(score.trick).toBe(1);
+        expect(fizz.trick).toBe("FIZZ");
+        expect(buzz.trick).toBe("BUZZ");
+        expect(fizzbuzz.trick).toBe("FIZZBUZZ");
+    });
 });

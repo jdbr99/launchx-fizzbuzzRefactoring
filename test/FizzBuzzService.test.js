@@ -24,4 +24,15 @@ describe("FizzBuzzService tests", () => {
         const res = FizzbuzzService.applyValidationInExplorer(explorer15); // {name: "Explorer15", score: 15, trick: "FIZZBUZZ"}
         expect(res.trick).toBe("FIZZBUZZ");
     });
+
+    test("Correctly validates number", () => {
+        const score = FizzbuzzService.applyValidationInNumber(1);
+        const fizz = FizzbuzzService.applyValidationInNumber(3);
+        const buzz = FizzbuzzService.applyValidationInNumber(5);
+        const fizzbuzz = FizzbuzzService.applyValidationInNumber(15);
+        expect(score.trick).toBe(1);
+        expect(fizz.trick).toBe("FIZZ");
+        expect(buzz.trick).toBe("BUZZ");
+        expect(fizzbuzz.trick).toBe("FIZZBUZZ");
+    });
 });
